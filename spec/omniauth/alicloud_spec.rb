@@ -3,7 +3,7 @@ RSpec.describe Omniauth::Alicloud do
     expect(Omniauth::Alicloud::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "test strategy alicloud laod success" do
+    expect(Omniauth::Strategies::Alicloud.new('xxx').test).to eq('test')
   end
 end
